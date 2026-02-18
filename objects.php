@@ -1,4 +1,4 @@
-<?php
+/* <?php
 class Fruit {
   public $name;
   public $color;
@@ -22,4 +22,18 @@ $apple->get_details(); // Get output
 $banana = new Fruit();
 $banana->set_details('Banana', 'Yellow'); // Set property values
 $banana->get_details(); // Get output
+?>
+ */
+
+<?php
+
+class Database {
+    public function connect() {
+        echo "Database Connected";
+    }
+}
+
+$db = new Database();
+$db->connect();
+
 ?>
