@@ -1,18 +1,25 @@
 <?php
-class Fruit {
-  // Properties
-  public $name;
-  public $color;
 
-  // Method to set the properties
-  function set_details($name, $color) {
-    $this->name = $name;
-    $this->color = $color;
-  }
+class Cars{
+    public $name;
+    public $color;
 
-  // Method to display the properties
-  function get_details() {
-    echo "Name: " . $this->name . ". Color: " . $this->color .".<br>";
-  }
+    function set_data($name,$color){
+        $this->name = $name;
+        $this->color = $color;
+    }
+    function get_data(){
+        echo "Name: " . $this->name;
+        echo " Color: " . $this->color;
+        echo "<br>";    
+    }
+
 }
-?>
+
+$car = new Cars();
+$car-> set_data("BMW","Black");
+$car-> get_data();
+
+$car2 = new Cars();
+$car2-> set_data("BYD","White");
+$car2-> get_data();
